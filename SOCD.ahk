@@ -1,79 +1,9 @@
-~a::
-{
-    if GetKeyState("d", "P")
-    {
-        Send "{d up}"
-    }
-    if !GetKeyState("a", "P")
-    {
-        Send "{a down}"
-    }
-}
+~w::(GetKeyState("s", "P") && Send("{s up}"), !GetKeyState("w", "P") && Send("{w down}"))
+~a::(GetKeyState("d", "P") && Send("{d up}"), !GetKeyState("a", "P") && Send("{a down}"))
+~s::(GetKeyState("w", "P") && Send("{w up}"), !GetKeyState("s", "P") && Send("{s down}"))
+~d::(GetKeyState("a", "P") && Send("{a up}"), !GetKeyState("d", "P") && Send("{d down}"))
 
-~d::
-{
-    if GetKeyState("a", "P")
-    {
-        Send "{a up}"
-    }
-    if !GetKeyState("d", "P")
-    {
-        Send "{d down}"
-    }
-}
-
-~w::
-{
-    if GetKeyState("s", "P")
-    {
-        Send "{s up}"
-    }
-    if !GetKeyState("w", "P")
-    {
-        Send "{w down}"
-    }
-}
-
-~s::
-{
-    if GetKeyState("w", "P")
-    {
-        Send "{w up}"
-    }
-    if !GetKeyState("s", "P")
-    {
-        Send "{s down}"
-    }
-}
-
-~a up::
-{
-    if GetKeyState("d", "P")
-    {
-        Send "{d down}"
-    }
-}
-
-~d up::
-{
-    if GetKeyState("a", "P")
-    {
-        Send "{a down}"
-    }
-}
-
-~w up::
-{
-    if GetKeyState("s", "P")
-    {
-        Send "{s down}"
-    }
-}
-
-~s up::
-{
-    if GetKeyState("w", "P")
-    {
-        Send "{w down}"
-    }
-}
+~w up::GetKeyState("s", "P") && Send("{s down}")
+~a up::GetKeyState("d", "P") && Send("{d down}")
+~s up::GetKeyState("w", "P") && Send("{w down}")
+~d up::GetKeyState("a", "P") && Send("{a down}")
