@@ -19,6 +19,7 @@ This specific example allows immediate strafing in games such as Counter-Strike 
 > | Game | Detection system | Side-effects |
 > | - | - | - |
 > | Overwatch | Warden | No confirmed detections |
+> | Marvel Rivals | NetEase GS | No confirmed detections |
 > | CS2 | VAC | May cause a kick if used consistently in a match |
 > | Valorant | Vanguard | Kernel anti-cheat filters/ignores injected key events |
 
