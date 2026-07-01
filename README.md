@@ -46,7 +46,8 @@ Since AHK is interpreted, the parsing complexity and amount affects the performa
 If you wish to only have A-D strafing, remove the lines associated with W and S.
 
 ## C version
-This variant has been made with the heavy use of A.I. It should in theory be much faster than the AHK script. Note that this version only supports A and D keys.
+Only supports A & D. Injects 1 event per required state correction by maintaing a list of
+what's physically pressed and what applications should be seeing.
 
 ### How to run
 Simply run the “SOCD_AD_C.exe” file. It will spawn a window that you can minimise. Closing this window will close the program.
